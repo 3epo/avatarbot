@@ -1,13 +1,12 @@
 from datetime import datetime
 import numpy as np
 import cv2
-#dt.strftime("%A, %d. %B %Y %I:%M%p")
 
 def convert_time_to_string(dt):
-    return f"{dt.strftime("%H:%M")"
+    return f"{dt.hour}:{dt.minute}"
     
 def convert_date_to_string(dt):
-    return f"{dt.strftime("%A, %d.%m.%y")"
+    return f"{dt.day}.{dt.month}.{dt.year}"
 
 
 def time_has_changed(prev_time):
